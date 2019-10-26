@@ -5,6 +5,7 @@ COPY requirements.txt /requirements.txt
 RUN set -eux; \
     apk --no-cache add \
       bash \
+      coreutils \
       git \
       jq \
       py3-pip \
