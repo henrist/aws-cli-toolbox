@@ -1,0 +1,12 @@
+name: CI
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Build Docker image
+        run: docker build -t aws-cli-toolbox .
+      - name: Test Docker image
+        run: docker run --rm aws-cli-toolbox aws --version
