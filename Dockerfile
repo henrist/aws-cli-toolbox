@@ -1,4 +1,4 @@
-FROM alpine:latest@sha256:3983cc12fb9dc20a009340149e382a18de6a8261b0ac0e8f5fcdf11f8dd5937e
+FROM alpine:latest@sha256:ddba4d27a7ffc3f86dd6c2f92041af252a1f23a8e742c90e6e1297bfa1bc0c45
 
 COPY requirements.txt /requirements.txt
 
